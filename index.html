@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início · DAQUI PRAÍ</title>
+
+    <!-- Fonte do site (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- Tailwind CSS (a mesma versão que o professor usa) -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+    <!-- Comportamento do menu no telemóvel -->
+    <script src="js/menu.js" defer></script>
+  </head>
+
+  <body class="bg-white text-slate-900 font-['Inter',sans-serif] antialiased">
+    <!-- Cabeçalho (igual em todas as páginas) -->
+    <header class="bg-white">
+      <div class="relative px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between gap-4">
+        <!-- Logótipo: leva sempre à página inicial -->
+        <a href="index.html" class="shrink-0">
+          <img
+            src="imagens/logosemfundo1.png"
+            alt="DAQUI PRAÍ Mudanças"
+            class="h-14 sm:h-16 md:h-20 w-auto"
+          />
+        </a>
+
+        <!-- Botão do menu: só visível em ecrãs pequenos; o comportamento está em js/menu.js -->
+        <button
+          type="button"
+          id="menu-botao"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          class="md:hidden flex items-center gap-3 rounded px-2 py-1.5 text-sm font-semibold text-sky-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600"
+        >
+          Menu
+          <span id="menu-icone" aria-hidden="true" class="text-2xl leading-none">☰</span>
+        </button>
+
+        <!-- Menu principal: no telemóvel abre por cima da página; no computador fica sempre visível -->
+        <nav
+          id="menu-principal"
+          aria-label="Principal"
+          class="hidden md:block absolute right-4 top-full z-20 w-44 md:static md:w-auto"
+        >
+          <ul
+            class="flex flex-col md:flex-row md:items-center md:gap-6 overflow-hidden rounded-lg md:rounded-none text-sm font-semibold"
+          >
+            <li>
+              <a
+                href="index.html"
+                aria-current="page"
+                class="block px-4 py-3 text-center bg-orange-600 text-white md:bg-transparent md:text-sky-950 md:px-1 md:py-2 md:border-b-2 md:border-orange-600"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="sobre.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a
+                href="servicos.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Serviços</a
+              >
+            </li>
+            <li>
+              <a
+                href="orcamento.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Orçamento</a
+              >
+            </li>
+            <li>
+              <a
+                href="contactos.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- O main não tem largura máxima: cada secção decide a sua -->
+    <main class="pb-12">
+      <!-- Imagem principal (hero): ocupa a largura toda do ecrã -->
+      <section
+        aria-labelledby="t-hero"
+        class="relative overflow-hidden h-72 sm:h-96 md:h-[calc(100vh-7rem)]"
+      >
+        <!-- Imagem de fundo: ocupa a secção toda e é cortada sem deformar (object-cover) -->
+        <img
+          src="imagens/img_inicio.jpg"
+          alt="Camião de mudanças numa estrada com Coimbra ao fundo"
+          class="absolute inset-0 h-full w-full object-cover object-[center_70%]"
+        />
+
+        <!-- Película escura à esquerda, para o texto se ler bem sobre a fotografia -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
+
+        <!-- Texto e botão: em coluna, com o botão empurrado para o fundo -->
+        <div class="relative h-full flex flex-col items-start px-4 sm:px-6 lg:px-10 pt-6 pb-6 sm:pt-10 sm:pb-16 md:pt-14 md:pb-32">
+          <h1
+            id="t-hero"
+            class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white drop-shadow-md"
+          >
+            A sua mudança,<br />
+            <span class="text-orange-600">o nosso compromisso.</span>
+          </h1>
+
+          <a
+            href="servicos.html"
+            class="mt-6 sm:mt-auto inline-flex items-center gap-2 rounded-lg bg-orange-600 px-5 py-3 text-sm sm:text-base font-semibold text-white shadow-md hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          >
+            Ver Serviços <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Próximas secções: vantagens, destaques e chamada para o orçamento -->
+    </main>
+          <!-- Vantagens: 2 colunas no telemóvel, 4 no computador -->
+      <section aria-labelledby="t-vantagens" class="bg-teal-50 border-b border-teal-100">
+        <!-- Título só para leitores de ecrã (visualmente a faixa não tem título) -->
+        <h2 id="t-vantagens" class="sr-only">As nossas vantagens</h2>
+
+        <ul
+          class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 px-4 sm:px-8 lg:px-16 py-10 md:py-12 text-center"
+        >
+          <li class="flex flex-col items-center gap-3">
+            <span
+              aria-hidden="true"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
+              >✓</span
+            >
+            <h3 class="font-semibold text-sky-950">Segurança</h3>
+            <p class="max-w-[13rem] text-sm text-slate-700">Os seus bens em boas mãos.</p>
+          </li>
+          <li class="flex flex-col items-center gap-3">
+            <span
+              aria-hidden="true"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
+              >✓</span
+            >
+            <h3 class="font-semibold text-sky-950">Pontualidade</h3>
+            <p class="max-w-[13rem] text-sm text-slate-700">Cumprimos os prazos.</p>
+          </li>
+          <li class="flex flex-col items-center gap-3">
+            <span
+              aria-hidden="true"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
+              >✓</span
+            >
+            <h3 class="font-semibold text-sky-950">Equipa Especializada</h3>
+            <p class="max-w-[13rem] text-sm text-slate-700">Profissionais experientes e de confiança.</p>
+          </li>
+          <li class="flex flex-col items-center gap-3">
+            <span
+              aria-hidden="true"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
+              >✓</span
+            >
+            <h3 class="font-semibold text-sky-950">Cobertura Nacional</h3>
+            <p class="max-w-[13rem] text-sm text-slate-700">De norte a sul do país.</p>
+          </li>
+        </ul>
+      </section>
+
+    <!-- Rodapé (igual em todas as páginas) -->
+    <footer></footer>
+  </body>
+</html>
