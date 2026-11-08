@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços · DAQUI PRAÍ</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="css/icones.css" />
+
+  
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+    
+    <script src="js/menu.js" defer></script>
+  </head>
+
+  <body class="bg-white text-slate-900 font-['Inter',sans-serif] antialiased">
+    
+    
+    <header class="bg-white">
+      <div class="relative px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between gap-4">
+        
+        <a href="index.html" class="shrink-0">
+          <img
+            src="imagens/logosemfundo1.png"
+            alt="DAQUI PRAÍ Mudanças"
+            class="h-14 sm:h-16 md:h-20 w-auto"
+          />
+        </a>
+
+        
+        <button
+          type="button"
+          id="menu-botao"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          class="md:hidden flex items-center gap-3 rounded px-2 py-1.5 text-sm font-semibold text-sky-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600"
+        >
+          Menu
+          <span id="menu-icone" aria-hidden="true" class="text-2xl leading-none">☰</span>
+        </button>
+
+        
+        <nav
+          id="menu-principal"
+          aria-label="Principal"
+          class="hidden md:block absolute right-4 top-full z-20 w-44 md:static md:w-auto"
+        >
+          <ul
+            class="flex flex-col md:flex-row md:items-center md:gap-6 overflow-hidden rounded-lg md:rounded-none text-sm font-semibold"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="sobre.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a
+                href="servicos.html"
+                aria-current="page"
+                class="block px-4 py-3 text-center bg-orange-600 text-white border-t border-sky-800 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-orange-600"
+                >Serviços</a
+              >
+            </li>
+            <li>
+              <a
+                href="orcamento.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Orçamento</a
+              >
+            </li>
+            <li>
+              <a
+                href="contactos.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        aria-labelledby="t-hero"
+        class="relative overflow-hidden h-80 sm:h-96 md:h-[28rem] [clip-path:polygon(0_0,100%_0,100%_100%,0_90%)]"
+      >
+        
+        <img
+          src="imagens/img_servicos.png"
+          alt=""
+          class="absolute inset-0 h-full w-full object-cover object-[center_80%]"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-sky-950 via-sky-950/80 to-transparent md:via-sky-950/60"
+        ></div>
+
+      
+        <div class="relative flex h-full flex-col items-start justify-center px-4 sm:px-6 lg:px-10 pb-8">
+          <h1
+            id="t-hero"
+            class="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-none tracking-tight text-white"
+          >
+            Os nossos<br />
+            <span class="text-orange-600">serviços.</span>
+          </h1>
+
+          <p class="mt-5 max-w-md text-base sm:text-lg text-white/90">
+            Soluções completas para todas as suas necessidades, com a qualidade que nos distingue.
+          </p>
+
+         
+          <span aria-hidden="true" class="mt-6 block h-1 w-16 rounded-full bg-orange-600"></span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Tipos de serviços -->
+      <section aria-labelledby="t-tipos" class="px-4 sm:px-8 lg:px-16 pt-4 pb-12">
+        <h2 id="t-tipos" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-sky-950">
+          Tipos de serviços
+        </h2>
+        <p class="mt-2 text-slate-700">Escolha o serviço ideal para si e conte com a nossa equipa.</p>
+
+        <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Mudanças Residenciais -->
+          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+            <img
+              src="imagens/destaques1.jpeg"
+              alt=""
+              class="aspect-[16/9] w-full object-cover"
+            />
+            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
+              <span aria-hidden="true" class="ant-design--home-outlined text-4xl"></span>
+              <h3 class="text-lg font-bold text-sky-950">Mudanças Residenciais</h3>
+              <p class="text-sm text-slate-600">
+                Casas e apartamentos. Transportamos os seus bens com todo o cuidado.
+              </p>
+              <a
+                href="orcamento.html?tipo=residencial"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+              >
+                Pedir Orçamento<span class="sr-only"> para mudanças residenciais</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Mudanças de Escritório -->
+          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+            <img
+              src="imagens/destaques2.jpeg"
+              alt=""
+              class="aspect-[16/9] w-full object-cover"
+            />
+            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
+              <span aria-hidden="true" class="andrsrxn--chair-office text-4xl"></span>
+              <h3 class="text-lg font-bold text-sky-950">Mudanças de Escritório</h3>
+              <p class="text-sm text-slate-600">
+                Minimizamos o impacto da sua mudança no dia a dia da sua empresa.
+              </p>
+              <a
+                href="orcamento.html?tipo=escritorio"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+              >
+                Pedir Orçamento<span class="sr-only"> para mudanças de escritório</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Quartos de Estudantes -->
+          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+            <img
+              src="imagens/quarto.png"
+              alt=""
+              class="aspect-[16/9] w-full object-cover"
+            />
+            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
+              <span aria-hidden="true" class="cbi--rooms-bedroom text-4xl"></span>
+              <h3 class="text-lg font-bold text-sky-950">Quartos de Estudantes</h3>
+              <p class="text-sm text-slate-600">
+                Soluções práticas para mudanças de quartos, com flexibilidade e rapidez.
+              </p>
+              <a
+                href="orcamento.html?tipo=estudantes"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+              >
+                Pedir Orçamento<span class="sr-only"> para quartos de estudantes</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Pequenas Mudanças -->
+          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+            <img
+              src="imagens/pacotes.png"
+              alt=""
+              class="aspect-[16/9] w-full object-cover"
+            />
+            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
+              <span aria-hidden="true" class="boxicons--package-filled text-4xl"></span>
+              <h3 class="text-lg font-bold text-sky-950">Pequenas Mudanças</h3>
+              <p class="text-sm text-slate-600">
+                Transportes de poucos itens, com a mesma dedicação e profissionalismo.
+              </p>
+              <a
+                href="orcamento.html?tipo=pequenas"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+              >
+                Pedir Orçamento<span class="sr-only"> para pequenas mudanças</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    
+    <footer></footer>
+  </body>
+</html>
