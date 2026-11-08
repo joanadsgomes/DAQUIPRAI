@@ -11,16 +11,19 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     />
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="css/icones.css" />
 
-    <!-- Tailwind CSS (a mesma versão que o professor usa) -->
+    
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
-    <!-- Comportamento do menu no telemóvel -->
+    
     <script src="js/menu.js" defer></script>
   </head>
 
   <body class="bg-white text-slate-900 font-['Inter',sans-serif] antialiased">
-    <!-- Cabeçalho (igual em todas as páginas) -->
+    
     <header class="bg-white">
       <div class="relative px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between gap-4">
         <!-- Logótipo: leva sempre à página inicial -->
@@ -32,7 +35,7 @@
           />
         </a>
 
-        <!-- Botão do menu: só visível em ecrãs pequenos; o comportamento está em js/menu.js -->
+        
         <button
           type="button"
           id="menu-botao"
@@ -44,7 +47,7 @@
           <span id="menu-icone" aria-hidden="true" class="text-2xl leading-none">☰</span>
         </button>
 
-        <!-- Menu principal: no telemóvel abre por cima da página; no computador fica sempre visível -->
+    
         <nav
           id="menu-principal"
           aria-label="Principal"
@@ -94,24 +97,24 @@
       </div>
     </header>
 
-    <!-- O main não tem largura máxima: cada secção decide a sua -->
+
     <main class="pb-12">
-      <!-- Imagem principal (hero): ocupa a largura toda do ecrã -->
+    
       <section
         aria-labelledby="t-hero"
         class="relative overflow-hidden h-72 sm:h-96 md:h-[calc(100vh-7rem)]"
       >
-        <!-- Imagem de fundo: ocupa a secção toda e é cortada sem deformar (object-cover) -->
+        
         <img
           src="imagens/img_inicio.jpg"
           alt="Camião de mudanças numa estrada com Coimbra ao fundo"
           class="absolute inset-0 h-full w-full object-cover object-[center_70%]"
         />
 
-        <!-- Película escura à esquerda, para o texto se ler bem sobre a fotografia -->
+        
         <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
 
-        <!-- Texto e botão: em coluna, com o botão empurrado para o fundo -->
+    
         <div class="relative h-full flex flex-col items-start px-4 sm:px-6 lg:px-10 pt-6 pb-6 sm:pt-10 sm:pb-16 md:pt-14 md:pb-32">
           <h1
             id="t-hero"
@@ -130,7 +133,7 @@
         </div>
       </section>
 
-      <!-- Próximas secções: vantagens, destaques e chamada para o orçamento -->
+      <!-- Secção de vantagems e destaques -->
     </main>
           <!-- Vantagens: 2 colunas no telemóvel, 4 no computador -->
       <section aria-labelledby="t-vantagens" class="bg-teal-50 border-b border-teal-100">
@@ -177,9 +180,141 @@
             <p class="max-w-[13rem] text-sm text-slate-700">De norte a sul do país.</p>
           </li>
         </ul>
-      </section>
 
-    <!-- Rodapé (igual em todas as páginas) -->
-    <footer></footer>
+      <!-- Destaques: 1 coluna no telemóvel, 3 no computador -->
+      <section aria-labelledby="t-destaques" class="px-4 sm:px-8 lg:px-16 py-12">
+        <!-- Título com o traço laranja por baixo -->
+        <h2
+          id="t-destaques"
+          class="inline-block border-b-[3px] border-orange-600 pb-1 text-2xl font-bold text-sky-950"
+        >
+          Destaques
+        </h2>
+
+        <ul class="mt-8 grid gap-8 md:grid-cols-3">
+          <li class="mx-auto w-full max-w-md md:max-w-none overflow-hidden rounded-xl bg-sky-950 p-1.5 text-center text-white">
+            <img
+              src="imagens/destaques1.jpeg"
+              alt="Caixas de mudança empilhadas numa sala vazia"
+              class="aspect-[16/10] w-full rounded-t-lg object-cover"
+            />
+            <div class="flex flex-col gap-2 px-4 py-5">
+              <h3 class="font-semibold">Mudanças Residenciais</h3>
+              <p class="mx-auto max-w-[16rem] text-sm text-slate-200">
+                Deixe a sua mudança connosco, com todo o cuidado e atenção.
+              </p>
+            </div>
+          </li>
+          <li class="mx-auto w-full max-w-md md:max-w-none overflow-hidden rounded-xl bg-sky-950 p-1.5 text-center text-white">
+            <img
+              src="imagens/destaques2.jpeg"
+              alt="Escritório com mesa de reuniões e cadeiras"
+              class="aspect-[16/10] w-full rounded-t-lg object-cover"
+            />
+            <div class="flex flex-col gap-2 px-4 py-5">
+              <h3 class="font-semibold">Mudanças de Escritório</h3>
+              <p class="mx-auto max-w-[16rem] text-sm text-slate-200">
+                Garantimos a continuidade do seu negócio.
+              </p>
+            </div>
+          </li>
+          <li class="mx-auto w-full max-w-md md:max-w-none overflow-hidden rounded-xl bg-sky-950 p-1.5 text-center text-white">
+            <img
+              src="imagens/destaques3.webp"
+              alt="Camião com plataforma a transportar equipamento na estrada"
+              class="aspect-[16/10] w-full rounded-t-lg object-cover"
+            />
+            <div class="flex flex-col gap-2 px-4 py-5">
+              <h3 class="font-semibold">Veículos Adaptados</h3>
+              <p class="mx-auto max-w-[16rem] text-sm text-slate-200">
+                Temos a solução ideal para cada necessidade.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+            <!-- CTA Button para o orçamento -->
+      <section aria-labelledby="t-chamada" class="bg-sky-300">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 px-4 sm:px-8 lg:px-16 py-10"
+        >
+        
+          <div class="flex items-center gap-4">
+            <span
+              aria-hidden="true"
+              class="energy-icons--calculator-20-bold shrink-0 text-5xl sm:text-6xl"
+            ></span>
+            <div>
+              <h2 id="t-chamada" class="text-2xl font-bold text-sky-950">
+                Faça já o seu orçamento!
+              </h2>
+              <p class="mt-1 text-sm text-sky-950/80">
+                É rápido, simples e sem compromisso.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="orcamento.html"
+            class="inline-flex w-full md:w-auto items-center justify-center gap-2 rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white shadow-md hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-950"
+          >
+            Obter orçamento <span aria-hidden="true">→</span>
+          </a>
+        </div>
+    </section>
+
+
+    <footer class="bg-slate-900 text-slate-300">
+      <div
+        class="px-4 sm:px-8 lg:px-16 py-10 flex flex-col items-center gap-8 md:grid md:grid-cols-[auto_1fr_auto] md:items-center"
+      >
+    
+        <a href="index.html" class="md:justify-self-start">
+          <img
+            src="imagens/logo_branco1.png"
+            alt="DAQUI PRAÍ Mudanças"
+            class="h-14 w-auto"
+          />
+        </a>
+
+    
+        <nav aria-label="Rodapé" class="md:justify-self-center">
+          <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+            <li>
+              <a href="index.html" aria-current="page" class="font-medium text-orange-500">Início</a>
+            </li>
+            <li><a href="sobre.html" class="hover:text-white">Sobre nós</a></li>
+            <li><a href="servicos.html" class="hover:text-white">Serviços</a></li>
+            <li><a href="orcamento.html" class="hover:text-white">Orçamento</a></li>
+            <li><a href="contactos.html" class="hover:text-white">Contactos</a></li>
+          </ul>
+        </nav>
+
+    
+        <div class="flex items-center gap-4 md:justify-self-end">
+          <a
+            href="#"
+            aria-label="Facebook da DAQUI PRAÍ"
+            class="flex rounded hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+          >
+            <span aria-hidden="true" class="bi--facebook text-3xl"></span>
+          </a>
+          <a
+            href="#"
+            aria-label="Instagram da DAQUI PRAÍ"
+            class="flex rounded hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+          >
+            <span aria-hidden="true" class="basil--instagram-outline text-3xl"></span>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="border-t border-slate-700">
+        <p class="px-4 sm:px-8 lg:px-16 py-4 text-center text-xs text-slate-400">
+          © 2026 DAQUI PRAÍ. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
