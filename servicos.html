@@ -15,6 +15,9 @@
     <!-- Ícones -->
     <link rel="stylesheet" href="css/icones.css" />
 
+    <!-- Animações (carrossel das vantagens) -->
+    <link rel="stylesheet" href="css/animacoes.css" />
+
   
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
@@ -134,30 +137,35 @@
       </section>
     </main>
 
-    <!-- Tipos de serviços -->
+          <!-- Tipos de serviços: cartões horizontais, 1 coluna até 1024 px e 2 colunas a partir daí -->
       <section aria-labelledby="t-tipos" class="px-4 sm:px-8 lg:px-16 pt-4 pb-12">
+        <!-- Traço laranja por cima do título -->
+        <span aria-hidden="true" class="mb-4 block h-1 w-20 rounded-full bg-orange-600"></span>
         <h2 id="t-tipos" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-sky-950">
           Tipos de serviços
         </h2>
         <p class="mt-2 text-slate-700">Escolha o serviço ideal para si e conte com a nossa equipa.</p>
 
-        <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul class="mt-8 grid gap-6 lg:grid-cols-2">
           <!-- Mudanças Residenciais -->
-          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+          <li class="flex flex-col sm:flex-row overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-md">
             <img
-              src="imagens/destaques1.jpeg"
-              alt=""
-              class="aspect-[16/9] w-full object-cover"
+              src="imagens/02_mudancas_residenciais.jpg"
+              alt="Sala com sofá e caixas de mudança"
+              class="h-48 w-full object-cover sm:h-auto sm:min-h-[14rem] sm:w-2/5"
             />
-            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
-              <span aria-hidden="true" class="ant-design--home-outlined text-4xl"></span>
+            <div class="flex flex-1 flex-col items-start gap-3 p-6">
+              <!-- Ícone dentro de um círculo claro -->
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/70">
+                <span aria-hidden="true" class="ant-design--home-outlined text-2xl"></span>
+              </span>
               <h3 class="text-lg font-bold text-sky-950">Mudanças Residenciais</h3>
               <p class="text-sm text-slate-600">
-                Casas e apartamentos. Transportamos os seus bens com todo o cuidado.
+                A sua casa, em boas mãos. Mudanças seguras e eficientes.
               </p>
               <a
                 href="orcamento.html?tipo=residencial"
-                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-6 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
               >
                 Pedir Orçamento<span class="sr-only"> para mudanças residenciais</span>
                 <span aria-hidden="true">→</span>
@@ -166,21 +174,23 @@
           </li>
 
           <!-- Mudanças de Escritório -->
-          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+          <li class="flex flex-col sm:flex-row overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-md">
             <img
-              src="imagens/destaques2.jpeg"
-              alt=""
-              class="aspect-[16/9] w-full object-cover"
+              src="imagens/03_mudancas_escritorio.jpg"
+              alt="Escritório com secretárias, cadeiras e caixas"
+              class="h-48 w-full object-cover sm:h-auto sm:min-h-[14rem] sm:w-2/5"
             />
-            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
-              <span aria-hidden="true" class="andrsrxn--chair-office text-4xl"></span>
+            <div class="flex flex-1 flex-col items-start gap-3 p-6">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/70">
+                <span aria-hidden="true" class="andrsrxn--chair-office text-2xl"></span>
+              </span>
               <h3 class="text-lg font-bold text-sky-950">Mudanças de Escritório</h3>
               <p class="text-sm text-slate-600">
-                Minimizamos o impacto da sua mudança no dia a dia da sua empresa.
+                Minimize o impacto do seu negócio com uma mudança rápida e organizada.
               </p>
               <a
                 href="orcamento.html?tipo=escritorio"
-                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-6 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
               >
                 Pedir Orçamento<span class="sr-only"> para mudanças de escritório</span>
                 <span aria-hidden="true">→</span>
@@ -189,21 +199,23 @@
           </li>
 
           <!-- Quartos de Estudantes -->
-          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+          <li class="flex flex-col sm:flex-row overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-md">
             <img
               src="imagens/quarto.png"
-              alt=""
-              class="aspect-[16/9] w-full object-cover"
+              alt="Quarto de estudante com secretária e caixas"
+              class="h-48 w-full object-cover sm:h-auto sm:min-h-[14rem] sm:w-2/5"
             />
-            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
-              <span aria-hidden="true" class="cbi--rooms-bedroom text-4xl"></span>
+            <div class="flex flex-1 flex-col items-start gap-3 p-6">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/70">
+                <span aria-hidden="true" class="cbi--rooms-bedroom text-2xl"></span>
+              </span>
               <h3 class="text-lg font-bold text-sky-950">Quartos de Estudantes</h3>
               <p class="text-sm text-slate-600">
                 Soluções práticas para mudanças de quartos, com flexibilidade e rapidez.
               </p>
               <a
                 href="orcamento.html?tipo=estudantes"
-                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-6 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
               >
                 Pedir Orçamento<span class="sr-only"> para quartos de estudantes</span>
                 <span aria-hidden="true">→</span>
@@ -212,21 +224,23 @@
           </li>
 
           <!-- Pequenas Mudanças -->
-          <li class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-center shadow-md">
+          <li class="flex flex-col sm:flex-row overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-md">
             <img
               src="imagens/pacotes.png"
-              alt=""
-              class="aspect-[16/9] w-full object-cover"
+              alt="Caixas de cartão empilhadas junto a uma planta"
+              class="h-48 w-full object-cover sm:h-auto sm:min-h-[14rem] sm:w-2/5"
             />
-            <div class="flex flex-1 flex-col items-center gap-3 px-5 py-6">
-              <span aria-hidden="true" class="boxicons--package-filled text-4xl"></span>
+            <div class="flex flex-1 flex-col items-start gap-3 p-6">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/70">
+                <span aria-hidden="true" class="boxicons--package-filled text-2xl"></span>
+              </span>
               <h3 class="text-lg font-bold text-sky-950">Pequenas Mudanças</h3>
               <p class="text-sm text-slate-600">
                 Transportes de poucos itens, com a mesma dedicação e profissionalismo.
               </p>
               <a
                 href="orcamento.html?tipo=pequenas"
-                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+                class="mt-auto inline-flex items-center gap-2 rounded-full bg-orange-600 px-6 py-2.5 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
               >
                 Pedir Orçamento<span class="sr-only"> para pequenas mudanças</span>
                 <span aria-hidden="true">→</span>
@@ -235,8 +249,281 @@
           </li>
         </ul>
       </section>
+                  
+      <!-- Serviços complementares: 2 colunas no telemóvel, 4 no computador -->
+      <section aria-labelledby="t-complementares" class="px-4 sm:px-8 lg:px-16 pb-12">
+        <!-- Título com o traço laranja por baixo -->
+        <h2
+          id="t-complementares"
+          class="inline-block border-b-[3px] border-orange-600 pb-1 text-2xl sm:text-3xl font-extrabold tracking-tight text-sky-950"
+        >
+          Serviços complementares
+        </h2>
+        <p class="mt-3 font-medium text-sky-950">
+          Facilitamos ainda mais o seu processo de mudança.
+        </p>
 
+        <ul class="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Embalamento de bens (ícone provisório: trocar quando descarregarem o próprio) -->
+          <li
+            class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-6 text-center shadow-sm"
+          >
+            <span aria-hidden="true" class="boxicons--package-filled text-4xl"></span>
+            <h3 class="text-sm sm:text-base font-semibold text-sky-950">Embalamento de bens</h3>
+          </li>
+
+          <!-- Desmontagem e montagem de móveis -->
+          <li
+            class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-6 text-center shadow-sm"
+          >
+            <span aria-hidden="true" class="game-icons--hand-truck text-4xl"></span>
+            <h3 class="text-sm sm:text-base font-semibold text-sky-950">
+              Desmontagem e montagem de móveis
+            </h3>
+          </li>
+
+          <!-- Transporte de pianos e objetos especiais -->
+          <li
+            class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-6 text-center shadow-sm"
+          >
+            <span aria-hidden="true" class="picon--piano text-4xl"></span>
+            <h3 class="text-sm sm:text-base font-semibold text-sky-950">
+              Transporte de pianos e objetos especiais
+            </h3>
+          </li>
+
+          <!-- Material de embalagem (ícone provisório: trocar quando descarregarem o próprio) -->
+          <li
+            class="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-6 text-center shadow-sm"
+          >
+            <span aria-hidden="true" class="boxicons--package-filled text-4xl"></span>
+            <h3 class="text-sm sm:text-base font-semibold text-sky-950">Material de embalagem</h3>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Chamada para o sistema de recomendação -->
+      <section aria-labelledby="t-recomendacao" class="px-4 sm:px-8 lg:px-16 pb-12">
+        <div class="relative overflow-hidden rounded-2xl bg-sky-950 shadow-lg">
+          <!-- Fotografia de fundo, só do lado direito e muito suave -->
+          <img
+            src="imagens/coimbra.png"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <!-- Azul por cima da fotografia, mais forte à esquerda, para o texto se ler bem -->
+          <div class="absolute inset-0 bg-gradient-to-r from-sky-950/85 via-sky-950/50 to-transparent"></div>
+
+          <!-- Conteúdo: empilhado no telemóvel, em linha no computador -->
+          <div class="relative flex flex-col gap-6 p-6 sm:p-8 md:flex-row md:items-center">
+            <span aria-hidden="true" class="mdi--map-marker-path shrink-0 text-6xl"></span>
+
+            <!-- Linha vertical a separar o ícone do texto (só no computador) -->
+            <span aria-hidden="true" class="hidden md:block h-16 w-px bg-white/40"></span>
+
+            <div class="flex-1">
+              <h2 id="t-recomendacao" class="text-2xl font-bold text-white">
+                O serviço certo, para si.
+              </h2>
+              <p class="mt-2 max-w-2xl text-sm sm:text-base text-white/85">
+                Utilize o nosso sistema de recomendação e receba a melhor solução, de acordo com o
+                seu tipo de mudança, localização e necessidades.
+              </p>
+            </div>
+
+            <a
+              href="orcamento.html"
+              class="inline-flex w-full md:w-auto shrink-0 items-center justify-center gap-2 rounded-full bg-orange-600 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            >
+              Descobrir recomendação <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+            <!-- Vantagens em carrossel contínuo (animação em css/animacoes.css) -->
+      <section aria-labelledby="t-vantagens" class="px-4 sm:px-8 lg:px-16 pb-12">
+        <!-- Título só para leitores de ecrã -->
+        <h2 id="t-vantagens" class="sr-only">As nossas vantagens</h2>
+
+        <!-- Janela do carrossel: esconde o que sai dos lados e esbate as pontas -->
+        <div
+          class="carrossel overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]"
+        >
+          <!-- Fita que se move: contém a lista duas vezes -->
+          <div class="carrossel-faixa flex w-max">
+            <!-- 1.ª cópia (a que os leitores de ecrã leem) -->
+            <ul class="flex shrink-0">
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span aria-hidden="true" class="bi--shield-check text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">Segurança</strong>
+                  em todas as etapas
+                </p>
+              </li>
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span aria-hidden="true" class="akar-icons--clock text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">Pontualidade</strong>
+                  garantida
+                </p>
+              </li>
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span aria-hidden="true" class="mdi--account-group text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">Equipa especializada</strong>
+                  e de confiança
+                </p>
+              </li>
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span aria-hidden="true" class="akar-icons--star text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">A sua satisfação</strong>
+                  é a nossa prioridade
+                </p>
+              </li>
+            </ul>
+
+            <!-- 2.ª cópia: só visual, escondida dos leitores de ecrã para não lerem tudo duas vezes -->
+            <ul class="flex shrink-0" aria-hidden="true">
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span class="bi--shield-check text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">Segurança</strong>
+                  em todas as etapas
+                </p>
+              </li>
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span class="akar-icons--clock text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">Pontualidade</strong>
+                  garantida
+                </p>
+              </li>
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span class="mdi--account-group text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">Equipa especializada</strong>
+                  e de confiança
+                </p>
+              </li>
+              <li class="flex items-center gap-3 border-r border-slate-200 px-8">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-100">
+                  <span class="akar-icons--star text-2xl"></span>
+                </span>
+                <p class="text-sm text-sky-950 whitespace-nowrap">
+                  <strong class="block font-semibold">A sua satisfação</strong>
+                  é a nossa prioridade
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+            <!-- Chamada final para o orçamento -->
+      <section aria-labelledby="t-pronto" class="px-4 sm:px-8 lg:px-16 pb-12">
+        <div class="flex flex-col md:flex-row md:items-center overflow-hidden rounded-2xl bg-slate-100 shadow-md">
+          <!-- Fotografia: em cima no telemóvel, à esquerda no computador -->
+          <div class="relative h-40 shrink-0 md:h-auto md:min-h-[10rem] md:self-stretch md:w-1/3">
+            <img
+              src="imagens/02_mudancas_residenciais.jpg"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <!-- Esbate a fotografia para a cor do cartão -->
+            <div
+              class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-transparent via-transparent to-slate-100"
+            ></div>
+          </div>
+
+          <!-- Texto e botão -->
+          <div class="flex flex-1 flex-col gap-6 p-6 sm:p-8 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h2 id="t-pronto" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-sky-950">
+                Pronto para mudar?
+              </h2>
+              <p class="mt-2 text-slate-700">
+                Peça já o seu orçamento gratuito e sem compromisso.
+              </p>
+            </div>
+
+            <a
+              href="orcamento.html"
+              class="inline-flex w-full md:w-auto shrink-0 items-center justify-center gap-2 rounded-full bg-orange-600 px-6 py-3 font-semibold text-white shadow-md hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+            >
+              Pedir Orçamento <span aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </section>
     
-    <footer></footer>
+        <!-- Rodapé (igual em todas as páginas) -->
+    <footer class="bg-slate-900 text-slate-300">
+      <div
+        class="px-4 sm:px-8 lg:px-16 py-10 flex flex-col items-center gap-8 md:grid md:grid-cols-[auto_1fr_auto] md:items-center"
+      >
+        <!-- Logótipo (versão com texto branco, para fundo escuro) -->
+        <a href="index.html" class="md:justify-self-start">
+          <img
+            src="imagens/logo_branco1.png"
+            alt="DAQUI PRAÍ Mudanças"
+            class="h-14 w-auto"
+          />
+        </a>
+
+        <!-- Links do rodapé: a página atual fica a laranja -->
+        <nav aria-label="Rodapé" class="md:justify-self-center">
+          <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white">Início</a></li>
+            <li><a href="sobre.html" class="hover:text-white">Sobre nós</a></li>
+            <li>
+              <a href="servicos.html" aria-current="page" class="font-medium text-orange-500">Serviços</a>
+            </li>
+            <li><a href="orcamento.html" class="hover:text-white">Orçamento</a></li>
+            <li><a href="contactos.html" class="hover:text-white">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <!-- Redes sociais (ícones definidos em css/icones.css) -->
+        <div class="flex items-center gap-4 md:justify-self-end">
+          <a
+            href="#"
+            aria-label="Facebook da DAQUI PRAÍ"
+            class="flex rounded hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+          >
+            <span aria-hidden="true" class="bi--facebook text-3xl"></span>
+          </a>
+          <a
+            href="#"
+            aria-label="Instagram da DAQUI PRAÍ"
+            class="flex rounded hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+          >
+            <span aria-hidden="true" class="basil--instagram-outline text-3xl"></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Direitos reservados -->
+      <div class="border-t border-slate-700">
+        <p class="px-4 sm:px-8 lg:px-16 py-4 text-center text-xs text-slate-400">
+          © 2026 DAQUI PRAÍ. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

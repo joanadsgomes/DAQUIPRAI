@@ -1,0 +1,26 @@
+/*Carrossel- página de serviços */
+@keyframes deslizar {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.carrossel-faixa {
+  animation: deslizar 25s linear infinite;
+}
+
+/* Para quando se passa o rato por cima ou se navega com o teclado */
+.carrossel:hover .carrossel-faixa,
+.carrossel:focus-within .carrossel-faixa {
+  animation-play-state: paused;
+}
+
+/* Sem movimento para quem pediu ao sistema para reduzir animações */
+@media (prefers-reduced-motion: reduce) {
+  .carrossel-faixa {
+    animation: none;
+  }
+}
