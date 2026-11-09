@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Conheça a DAQUI PRAÍ, uma empresa de mudanças e transportes em Coimbra."
+  >
+
+  <title>Sobre nós | DAQUI PRAÍ</title>
+
+  <!-- Tailwind CSS, como nos exemplos das aulas -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white font-sans text-sky-950 leading-relaxed"></body>
+  <header class="bg-white">
+    <div class="relative px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between gap-4">
+
+      <!-- Logótipo -->
+      <a href="index.html" class="shrink-0">
+        <img
+          src="imagens/logosemfundo1.png"
+          alt="DAQUI PRAÍ Mudanças"
+          class="h-14 sm:h-16 md:h-20 w-auto"
+        >
+      </a>
+
+      <!-- Botão do menu para telemóvel -->
+      <button
+        type="button"
+        id="menu-botao"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        class="md:hidden flex items-center gap-3 rounded px-2 py-1.5 text-sm font-semibold text-sky-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600"
+      >
+        Menu
+        <span
+          id="menu-icone"
+          aria-hidden="true"
+          class="text-2xl leading-none"
+        >☰</span>
+      </button>
+
+      <!-- Menu principal -->
+      <nav
+        id="menu-principal"
+        aria-label="Principal"
+        class="hidden md:block absolute right-4 top-full z-20 w-44 md:static md:w-auto"
+      >
+        <ul class="flex flex-col md:flex-row md:items-center md:gap-6 overflow-hidden rounded-lg md:rounded-none text-sm font-semibold">
+
+          <li>
+            <a
+              href="index.html"
+              class="block px-4 py-3 text-center bg-sky-950 text-white hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+            >Início</a>
+          </li>
+
+          <li>
+            <a
+              href="sobre.html"
+              aria-current="page"
+              class="block px-4 py-3 text-center bg-orange-600 text-white border-t border-sky-800 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-orange-600"
+            >Sobre nós</a>
+          </li>
+
+          <li>
+            <a
+              href="servicos.html"
+              class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+            >Serviços</a>
+          </li>
+
+          <li>
+            <a
+              href="orcamento.html"
+              class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+            >Orçamento</a>
+          </li>
+
+          <li>
+            <a
+              href="contactos.html"
+              class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+            >Contactos</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+    <main>
+
+  <!-- Faixa com imagem de Coimbra e efeito azul -->
+<section class="relative overflow-hidden bg-sky-950">
+
+  <!-- Fotografia -->
+  <img
+    src="imagens/coimbra_topo.png"
+    alt=""
+    class="absolute inset-0 h-full w-full object-cover object-center"
+  >
+
+  <!-- Camada azul: mais escura à esquerda -->
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 bg-gradient-to-r from-sky-950/90 via-sky-950/50 to-sky-950/20"
+  ></div>
+
+  <!-- Texto por cima da imagem -->
+  <div class="relative px-4 sm:px-8 lg:px-16 py-14 md:py-20 text-white">
+
+    <h1 class="mb-3 text-4xl md:text-5xl font-bold">
+      Sobre nós
+    </h1>
+
+    <p class="text-base md:text-lg">
+      Mais do que mudanças, são novas histórias.
+    </p>
+
+  </div>
+</section>
+        <section class="px-4 sm:px-8 lg:px-16 pt-10 md:pt-12 pb-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
+
+        <!-- Texto -->
+        <div>
+          <h2 class="text-2xl font-bold">
+            A nossa história
+          </h2>
+
+          <!-- Linha laranja -->
+          <div
+            aria-hidden="true"
+            class="mt-2 mb-5 h-1 w-10 bg-orange-600"
+          ></div>
+
+          <p class="mb-4 text-slate-600">
+            A <strong class="text-sky-950">DAQUI PRAÍ</strong>
+            nasceu com um objetivo: tornar as mudanças mais simples,
+            com um serviço de mudanças e transportes próximo,
+            cuidado e organizado.
+          </p>
+
+          <p class="mb-4 text-slate-600">
+            Em Coimbra, queremos fazer parte de cada novo começo.
+            Sabemos que uma mudança envolve mais do que transportar
+            caixas: envolve memórias, expectativas e os objetos
+            que fazem parte da sua vida.
+          </p>
+
+          <p class="text-slate-600">
+            Por isso, acompanhamos cada etapa com atenção e dedicação,
+            para que chegue ao seu novo destino com tranquilidade.
+          </p>
+        </div>
+
+        <!-- Fotografia -->
+        <img
+          src="imagens/equipa.jpg"
+          alt="Equipa da DAQUI PRAÍ a preparar uma mudança"
+          width="800"
+          height="600"
+          loading="lazy"
+          class="w-full aspect-[4/3] rounded-lg object-cover bg-slate-100"
+        >
+
+      </div>
+    </section>
