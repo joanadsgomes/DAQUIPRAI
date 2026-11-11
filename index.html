@@ -14,7 +14,8 @@
     
     <!-- Ícones -->
     <link rel="stylesheet" href="css/icones.css" />
-
+    <!-- Animações -->
+    <link rel="stylesheet" href="css/animacoes.css" />
     
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
@@ -94,176 +95,618 @@
             </li>
           </ul>
         </nav>
+        <!-- Botão do cabeçalho, como no mockup -->
+<a
+  href="orcamento.html"
+  class="hidden lg:inline-flex shrink-0 items-center justify-center rounded-full bg-orange-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2"
+>
+  Pedir orçamento →
+</a>
       </div>
     </header>
 
 
-    <main class="pb-12">
-    
-      <section
-        aria-labelledby="t-hero"
-        class="relative overflow-hidden h-72 sm:h-96 md:h-[calc(100vh-7rem)]"
-      >
-        
-        <img
-          src="imagens/img_servicos.png"
-          alt="Camião de mudanças numa estrada com Coimbra ao fundo"
-          class="absolute inset-0 h-full w-full object-cover object-[center_70%]"
-        />
+    <main>
 
-        
-        <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
+  <!-- =======================================
+       IMAGEM PRINCIPAL
+       ======================================= -->
+  <section
+    aria-labelledby="t-hero"
+    class="relative overflow-hidden bg-sky-950"
+  >
 
-    
-        <div class="relative h-full flex flex-col items-start px-4 sm:px-6 lg:px-10 pt-6 pb-6 sm:pt-10 sm:pb-16 md:pt-14 md:pb-32">
-          <h1
-            id="t-hero"
-            class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white drop-shadow-md"
-          >
-            A sua mudança,<br />
-            <span class="text-orange-600">o nosso compromisso.</span>
-          </h1>
+    <img
+      src="imagens/img_servicos.png"
+      alt=""
+      fetchpriority="high"
+      class="absolute inset-0 h-full w-full object-cover object-[center_70%]"
+    >
 
-          <a
-            href="servicos.html"
-            class="mt-6 sm:mt-auto inline-flex items-center gap-2 rounded-lg bg-orange-600 px-5 py-3 text-sm sm:text-base font-semibold text-white shadow-md hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-          >
-            Ver Serviços <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
+    <!-- Camada azul para facilitar a leitura -->
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 bg-gradient-to-r from-sky-950/95 via-sky-950/65 to-sky-950/10"
+    ></div>
 
-      <!-- Secção de vantagems e destaques -->
-    </main>
-          <!-- Vantagens: 2 colunas no telemóvel, 4 no computador -->
-      <section aria-labelledby="t-vantagens" class="bg-teal-50 border-b border-teal-100">
-        <!-- Título só para leitores de ecrã (visualmente a faixa não tem título) -->
-        <h2 id="t-vantagens" class="sr-only">As nossas vantagens</h2>
+    <div class="relative mx-auto max-w-7xl px-4 pb-24 pt-14 sm:px-8 sm:pt-20 lg:px-16 lg:pb-28 lg:pt-24">
 
-        <ul
-          class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 px-4 sm:px-8 lg:px-16 py-10 md:py-12 text-center"
+      <div class="max-w-2xl">
+
+        <h1
+          id="t-hero"
+          class="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
         >
-          <li class="flex flex-col items-center gap-3">
-            <span
-              aria-hidden="true"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
-              >✓</span
-            >
-            <h3 class="font-semibold text-sky-950">Segurança</h3>
-            <p class="max-w-[13rem] text-sm text-slate-700">Os seus bens em boas mãos.</p>
-          </li>
-          <li class="flex flex-col items-center gap-3">
-            <span
-              aria-hidden="true"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
-              >✓</span
-            >
-            <h3 class="font-semibold text-sky-950">Pontualidade</h3>
-            <p class="max-w-[13rem] text-sm text-slate-700">Cumprimos os prazos.</p>
-          </li>
-          <li class="flex flex-col items-center gap-3">
-            <span
-              aria-hidden="true"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
-              >✓</span
-            >
-            <h3 class="font-semibold text-sky-950">Equipa Especializada</h3>
-            <p class="max-w-[13rem] text-sm text-slate-700">Profissionais experientes e de confiança.</p>
-          </li>
-          <li class="flex flex-col items-center gap-3">
-            <span
-              aria-hidden="true"
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-950 text-lg font-bold text-white"
-              >✓</span
-            >
-            <h3 class="font-semibold text-sky-950">Cobertura Nacional</h3>
-            <p class="max-w-[13rem] text-sm text-slate-700">De norte a sul do país.</p>
-          </li>
-        </ul>
+          A sua mudança,
+          <span class="block text-orange-500">
+            o nosso compromisso.
+          </span>
+        </h1>
 
-      <!-- Destaques: 1 coluna no telemóvel, 3 no computador -->
-      <section aria-labelledby="t-destaques" class="px-4 sm:px-8 lg:px-16 py-12">
-        <!-- Título com o traço laranja por baixo -->
+        <p class="mt-5 max-w-lg text-base leading-relaxed text-white sm:text-lg">
+          Soluções completas para todas as suas necessidades,
+          com a qualidade que nos distingue.
+        </p>
+
+        <a
+          href="servicos.html"
+          class="mt-7 inline-flex items-center justify-center rounded-2xl bg-orange-600 px-7 py-3 font-semibold text-white shadow-md transition hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        >
+          Ver serviços →
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Ondas decorativas inferiores -->
+    <svg
+      viewBox="0 0 1440 90"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      class="absolute bottom-0 left-0 h-12 w-full sm:h-16"
+    >
+      <path
+        fill="#f97316"
+        d="M0,5 C220,35 370,90 700,65 C1000,45 1200,70 1440,35 L1440,90 L0,90 Z"
+      ></path>
+
+      <path
+        fill="#ffffff"
+        d="M0,30 C300,70 650,100 1000,65 C1200,45 1300,55 1440,35 L1440,90 L0,90 Z"
+      ></path>
+    </svg>
+
+  </section>
+
+
+  <!-- =======================================
+       VANTAGENS SEM ÍCONES
+       ======================================= -->
+  <section
+    aria-labelledby="t-vantagens"
+    class="mx-auto max-w-7xl px-4 py-8 sm:px-8 lg:px-16"
+  >
+
+    <h2 id="t-vantagens" class="sr-only">
+      As nossas vantagens
+    </h2>
+
+    <ul class="grid grid-cols-2 gap-x-4 gap-y-6 text-center md:grid-cols-4">
+
+      <li class="px-2">
+        <h3 class="font-bold text-sky-950">
+          Segurança
+        </h3>
+        <p class="mt-1 text-sm text-slate-600">
+          Os seus bens em boas mãos.
+        </p>
+      </li>
+
+      <li class="px-2 md:border-l md:border-slate-200">
+        <h3 class="font-bold text-sky-950">
+          Pontualidade
+        </h3>
+        <p class="mt-1 text-sm text-slate-600">
+          Cumprimos os prazos.
+        </p>
+      </li>
+
+      <li class="px-2 md:border-l md:border-slate-200">
+        <h3 class="font-bold text-sky-950">
+          Equipa especializada
+        </h3>
+        <p class="mt-1 text-sm text-slate-600">
+          Profissionais de confiança.
+        </p>
+      </li>
+
+      <li class="px-2 md:border-l md:border-slate-200">
+        <h3 class="font-bold text-sky-950">
+          A sua satisfação
+        </h3>
+        <p class="mt-1 text-sm text-slate-600">
+          É a nossa prioridade.
+        </p>
+      </li>
+
+    </ul>
+  </section>
+
+
+  <!-- =======================================
+       SERVIÇOS SEM ÍCONES
+       ======================================= -->
+  <section
+    aria-labelledby="t-servicos"
+    class="mx-auto max-w-7xl px-4 py-8 sm:px-8 lg:px-16"
+  >
+
+    <div class="grid gap-7 xl:grid-cols-[200px_1fr] xl:items-center">
+
+      <!-- Texto introdutório -->
+      <div>
+
+        <div
+          aria-hidden="true"
+          class="mb-3 h-1 w-12 bg-orange-500"
+        ></div>
+
         <h2
-          id="t-destaques"
-          class="inline-block border-b-[3px] border-orange-600 pb-1 text-2xl font-bold text-sky-950"
+          id="t-servicos"
+          class="text-3xl font-extrabold leading-tight text-sky-950"
         >
-          Destaques
+          Os nossos serviços
         </h2>
 
-        <ul class="mt-8 grid gap-8 md:grid-cols-3">
-          <li class="mx-auto w-full max-w-md md:max-w-none overflow-hidden rounded-xl bg-sky-950 p-1.5 text-center text-white">
-            <img
-              src="imagens/destaques1.jpeg"
-              alt="Caixas de mudança empilhadas numa sala vazia"
-              class="aspect-[16/10] w-full rounded-t-lg object-cover"
-            />
-            <div class="flex flex-col gap-2 px-4 py-5">
-              <h3 class="font-semibold">Mudanças Residenciais</h3>
-              <p class="mx-auto max-w-[16rem] text-sm text-slate-200">
-                Deixe a sua mudança connosco, com todo o cuidado e atenção.
-              </p>
-            </div>
-          </li>
-          <li class="mx-auto w-full max-w-md md:max-w-none overflow-hidden rounded-xl bg-sky-950 p-1.5 text-center text-white">
-            <img
-              src="imagens/destaques2.jpeg"
-              alt="Escritório com mesa de reuniões e cadeiras"
-              class="aspect-[16/10] w-full rounded-t-lg object-cover"
-            />
-            <div class="flex flex-col gap-2 px-4 py-5">
-              <h3 class="font-semibold">Mudanças de Escritório</h3>
-              <p class="mx-auto max-w-[16rem] text-sm text-slate-200">
-                Garantimos a continuidade do seu negócio.
-              </p>
-            </div>
-          </li>
-          <li class="mx-auto w-full max-w-md md:max-w-none overflow-hidden rounded-xl bg-sky-950 p-1.5 text-center text-white">
-            <img
-              src="imagens/destaques3.webp"
-              alt="Camião com plataforma a transportar equipamento na estrada"
-              class="aspect-[16/10] w-full rounded-t-lg object-cover"
-            />
-            <div class="flex flex-col gap-2 px-4 py-5">
-              <h3 class="font-semibold">Veículos Adaptados</h3>
-              <p class="mx-auto max-w-[16rem] text-sm text-slate-200">
-                Temos a solução ideal para cada necessidade.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-            <!-- CTA Button para o orçamento -->
-      <section aria-labelledby="t-chamada" class="bg-sky-300">
-        <div
-          class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 px-4 sm:px-8 lg:px-16 py-10"
+        <p class="mt-4 text-slate-600">
+          Soluções flexíveis, adaptadas às suas necessidades.
+        </p>
+
+        <a
+          href="servicos.html"
+          class="mt-5 inline-flex rounded-full border-2 border-orange-600 px-4 py-2 text-sm font-semibold text-orange-700 transition hover:bg-orange-600 hover:text-white"
         >
-        
-          <div class="flex items-center gap-4">
-            <span
-              aria-hidden="true"
-              class="energy-icons--calculator-20-bold shrink-0 text-5xl sm:text-6xl"
-            ></span>
-            <div>
-              <h2 id="t-chamada" class="text-2xl font-bold text-sky-950">
-                Faça já o seu orçamento!
-              </h2>
-              <p class="mt-1 text-sm text-sky-950/80">
-                É rápido, simples e sem compromisso.
-              </p>
-            </div>
+          Conheça os serviços →
+        </a>
+
+      </div>
+
+      <!-- Quatro cartões -->
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Residenciais -->
+        <article class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-200 hover:shadow-lg motion-safe:hover:-translate-y-1">
+
+          <img
+            src="imagens/destaques1.jpeg"
+            alt="Caixas de mudança numa sala"
+            loading="lazy"
+            class="aspect-[4/3] w-full object-cover"
+          >
+
+          <div class="p-5 text-center">
+            <h3 class="font-bold leading-tight text-sky-950">
+              Mudanças residenciais
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">
+              Deixe a sua mudança connosco, com todo o cuidado
+              e atenção.
+            </p>
           </div>
 
-          <a
-            href="orcamento.html"
-            class="inline-flex w-full md:w-auto items-center justify-center gap-2 rounded-lg bg-orange-600 px-6 py-3 font-semibold text-white shadow-md hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-950"
+        </article>
+
+        <!-- Escritórios -->
+        <article class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-200 hover:shadow-lg motion-safe:hover:-translate-y-1">
+
+          <img
+            src="imagens/destaques2.jpeg"
+            alt="Escritório com mesa de reuniões e cadeiras"
+            loading="lazy"
+            class="aspect-[4/3] w-full object-cover"
           >
-            Obter orçamento <span aria-hidden="true">→</span>
+
+          <div class="p-5 text-center">
+            <h3 class="font-bold leading-tight text-sky-950">
+              Mudanças de escritório
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">
+              Planeamos a sua mudança para reduzir o impacto
+              no trabalho.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- Transportes -->
+        <article class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-200 hover:shadow-lg motion-safe:hover:-translate-y-1">
+
+          <img
+            src="imagens/destaques3.webp"
+            alt="Veículo de transporte de equipamento"
+            loading="lazy"
+            class="aspect-[4/3] w-full object-cover"
+          >
+
+          <div class="p-5 text-center">
+            <h3 class="font-bold leading-tight text-sky-950">
+              Transportes e pequenas mudanças
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">
+              Transportamos o que precisa, com toda a segurança.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- Embalamento -->
+        <article class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition duration-200 hover:shadow-lg motion-safe:hover:-translate-y-1">
+
+          <img
+            src="imagens/destaques1.jpeg"
+            alt="Caixas para proteger os bens durante a mudança"
+            loading="lazy"
+            class="aspect-[4/3] w-full object-cover"
+          >
+
+          <div class="p-5 text-center">
+            <h3 class="font-bold leading-tight text-sky-950">
+              Embalamento e montagem
+            </h3>
+
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">
+              Deixe o trabalho connosco: embalamos e montamos.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =======================================
+       RECOMENDAÇÃO DE SERVIÇO
+       ======================================= -->
+  <section
+    aria-labelledby="t-recomendacao"
+    class="mx-auto max-w-7xl px-4 py-5 sm:px-8 lg:px-16"
+  >
+
+    <div class="rounded-3xl bg-gradient-to-br from-sky-100 to-blue-200 p-6 sm:p-8">
+
+      <h2
+        id="t-recomendacao"
+        class="text-2xl font-extrabold text-sky-950 sm:text-3xl"
+      >
+        Não sabe que serviço escolher?
+      </h2>
+
+      <p class="mt-3 max-w-xl text-sky-950">
+        Responda a uma pergunta e descubra uma solução
+        para a sua mudança.
+      </p>
+
+      <!-- Abre e fecha sem precisar de JavaScript -->
+      <details class="mt-5">
+
+        <summary class="w-fit cursor-pointer rounded-2xl bg-orange-600 px-6 py-3 font-semibold text-white hover:bg-orange-700">
+          Descobrir recomendação
+        </summary>
+
+        <div class="mt-5 max-w-xl rounded-2xl bg-white p-5">
+
+          <label
+            for="necessidade"
+            class="mb-3 block font-semibold text-sky-950"
+          >
+            O que precisa de fazer?
+          </label>
+
+          <select
+            id="necessidade"
+            class="w-full rounded-lg border border-slate-300 bg-white p-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+          >
+            <option value="">Escolha uma opção</option>
+            <option value="casa">Mudar de casa</option>
+            <option value="escritorio">Mudar de escritório</option>
+            <option value="transporte">Transportar poucos objetos</option>
+            <option value="embalar">Embalar ou montar mobiliário</option>
+          </select>
+
+          <p
+            id="resposta-servico"
+            aria-live="polite"
+            class="mt-4 leading-relaxed text-slate-700"
+          ></p>
+
+          <a
+            id="pedir-servico"
+            href="orcamento.html"
+            class="mt-4 hidden font-semibold text-orange-700 underline"
+          >
+            Pedir orçamento →
           </a>
+
         </div>
-    </section>
+      </details>
+
+    </div>
+  </section>
 
 
+  <!-- =======================================
+       TESTEMUNHOS
+       ======================================= -->
+<!-- TESTEMUNHOS DOS CLIENTES -->
+<section
+  aria-labelledby="t-testemunhos"
+  class="mx-auto max-w-7xl px-4 py-8 sm:px-8 lg:px-16"
+>
+
+  <!-- Linha laranja -->
+  <div
+    aria-hidden="true"
+    class="mb-3 h-1 w-12 bg-orange-500"
+  ></div>
+
+  <h2
+    id="t-testemunhos"
+    class="text-2xl font-extrabold text-sky-950 sm:text-3xl"
+  >
+    O que dizem os nossos clientes?
+  </h2>
+
+  <p class="mt-2 text-slate-600">
+    A confiança de quem já mudou connosco.
+  </p>
+
+  <p class="mt-1 text-xs text-slate-500">
+    Testemunhos ilustrativos para este projeto académico.
+  </p>
+
+  <!-- Opção para manter a animação pausada -->
+  <input
+    type="checkbox"
+    id="pausar-testemunhos"
+    class="peer mt-5 h-4 w-4 accent-orange-600"
+  >
+
+  <label
+    for="pausar-testemunhos"
+    class="ml-2 cursor-pointer text-sm text-sky-950"
+  >
+    Pausar animação
+  </label>
+
+  <!-- Área visível do carrossel -->
+  <div
+    class="carrossel mt-5 overflow-hidden rounded-2xl peer-checked:[&_.carrossel-faixa]:[animation-play-state:paused] motion-reduce:overflow-x-auto focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600"
+    tabindex="0"
+    role="region"
+    aria-label="Testemunhos de clientes"
+  >
+
+    <!-- Faixa que se desloca -->
+    <div class="carrossel-faixa flex w-max">
+
+      <!-- GRUPO ORIGINAL -->
+      <div class="flex shrink-0">
+
+        <!-- Testemunho 1 -->
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “Serviço impecável! Uma equipa muito profissional
+            e prestável. A mudança correu de forma tranquila
+            do início ao fim.”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            Ana Silva
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Mudança residencial
+          </p>
+
+        </article>
+
+        <!-- Testemunho 2 -->
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “Mudança feita com rapidez e cuidado. Conseguimos
+            organizar o novo escritório sem complicações.
+            Excelente atendimento!”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            João Costa
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Mudança de escritório
+          </p>
+
+        </article>
+
+        <!-- Testemunho 3 -->
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “Muito satisfeita com a DAQUI PRAÍ! Os meus móveis
+            chegaram bem protegidos e a equipa tornou todo
+            o processo muito mais fácil.”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            Maria Santos
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Transporte de mobiliário
+          </p>
+
+        </article>
+
+        <!-- Testemunho 4 -->
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “O serviço de embalamento foi uma grande ajuda.
+            Tudo chegou em boas condições e a montagem
+            ficou feita com muito cuidado.”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            Pedro Almeida
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Embalamento e montagem
+          </p>
+
+        </article>
+
+      </div>
+
+      <!-- CÓPIA DO GRUPO PARA CONTINUAR A ANIMAÇÃO -->
+      <div
+        class="flex shrink-0 motion-reduce:hidden"
+        aria-hidden="true"
+      >
+
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “Serviço impecável! Uma equipa muito profissional
+            e prestável. A mudança correu de forma tranquila
+            do início ao fim.”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            Ana Silva
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Mudança residencial
+          </p>
+
+        </article>
+
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “Mudança feita com rapidez e cuidado. Conseguimos
+            organizar o novo escritório sem complicações.
+            Excelente atendimento!”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            João Costa
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Mudança de escritório
+          </p>
+
+        </article>
+
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “Muito satisfeita com a DAQUI PRAÍ! Os meus móveis
+            chegaram bem protegidos e a equipa tornou todo
+            o processo muito mais fácil.”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            Maria Santos
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Transporte de mobiliário
+          </p>
+
+        </article>
+
+        <article class="mr-5 w-64 shrink-0 rounded-2xl border border-slate-200 bg-white p-6 sm:w-80">
+
+          <blockquote class="text-sm leading-relaxed text-slate-700">
+            “O serviço de embalamento foi uma grande ajuda.
+            Tudo chegou em boas condições e a montagem
+            ficou feita com muito cuidado.”
+          </blockquote>
+
+          <p class="mt-5 font-bold text-sky-950">
+            Pedro Almeida
+          </p>
+
+          <p class="mt-1 text-xs text-slate-500">
+            Embalamento e montagem
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- =======================================
+       CHAMADA FINAL PARA ORÇAMENTO
+       ======================================= -->
+  <section
+    aria-labelledby="t-chamada"
+    class="mx-auto max-w-7xl px-4 pb-12 pt-3 sm:px-8 lg:px-16"
+  >
+
+    <div class="overflow-hidden rounded-3xl bg-sky-950 md:grid md:grid-cols-2">
+
+      <div class="px-6 py-9 text-white sm:px-8">
+
+        <h2
+          id="t-chamada"
+          class="text-3xl font-extrabold"
+        >
+          Pronto para mudar?
+        </h2>
+
+        <p class="mt-3 text-white/90">
+          Peça já o seu orçamento gratuito e sem compromisso.
+        </p>
+
+        <a
+          href="orcamento.html"
+          class="mt-6 inline-flex rounded-2xl bg-orange-600 px-6 py-3 font-semibold text-white transition hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        >
+          Pedir orçamento →
+        </a>
+
+      </div>
+
+      <div class="relative min-h-[200px] border-t-4 border-orange-500 md:border-l-4 md:border-t-0">
+
+        <img
+          src="imagens/destaques1.jpeg"
+          alt="Caixas preparadas para uma mudança"
+          loading="lazy"
+          class="absolute inset-0 h-full w-full object-cover"
+        >
+
+      </div>
+    </div>
+  </section>
+
+</main>
     <footer class="bg-slate-900 text-slate-300">
       <div
         class="px-4 sm:px-8 lg:px-16 py-10 flex flex-col items-center gap-8 md:grid md:grid-cols-[auto_1fr_auto] md:items-center"
@@ -316,5 +759,36 @@
         </p>
       </div>
     </footer>
-  </body>
+   <!-- JavaScript apenas para a recomendação de serviço -->
+<script>
+  (() => {
+    const necessidade = document.getElementById('necessidade');
+    const resposta = document.getElementById('resposta-servico');
+    const pedirServico = document.getElementById('pedir-servico');
+
+    const recomendacoes = {
+      casa:
+        'Recomendamos Mudanças Residenciais: apoio no transporte dos seus móveis e bens para a nova casa.',
+
+      escritorio:
+        'Recomendamos Mudanças de Escritório: organização e transporte do mobiliário e equipamento de trabalho.',
+
+      transporte:
+        'Recomendamos Transportes e Pequenas Mudanças: uma solução para transportar poucos móveis ou objetos.',
+
+      embalar:
+        'Recomendamos Embalamento e Montagem: ajuda a proteger os seus bens e a montar o mobiliário.'
+    };
+
+    necessidade.addEventListener('change', function () {
+      const escolha = necessidade.value;
+
+      resposta.textContent = recomendacoes[escolha] || '';
+
+      pedirServico.classList.toggle('hidden', !escolha);
+    });
+  })();
+</script>
+
+</body>
 </html>
