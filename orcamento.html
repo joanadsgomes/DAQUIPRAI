@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orçamento · DAQUI PRAÍ</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    
+    <link rel="stylesheet" href="css/icones.css" />
+
+    <!-- Tailwind CSS (a mesma versão que o professor usa) -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+    
+    <script src="js/menu.js" defer></script>
+
+    
+    <script src="js/separadores.js" defer></script>
+  </head>
+
+  <body class="bg-white text-slate-900 font-['Inter',sans-serif] antialiased">
+        
+    <header class="bg-white">
+      <div class="relative px-4 sm:px-8 lg:px-16 py-4 flex items-center justify-between gap-4">
+       
+        <a href="index.html" class="shrink-0">
+          <img
+            src="imagens/logosemfundo1.png"
+            alt="DAQUI PRAÍ Mudanças"
+            class="h-14 sm:h-16 md:h-20 w-auto"
+          />
+        </a>
+
+        
+        <button
+          type="button"
+          id="menu-botao"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          class="md:hidden flex items-center gap-3 rounded px-2 py-1.5 text-sm font-semibold text-sky-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600"
+        >
+          Menu
+          <span id="menu-icone" aria-hidden="true" class="text-2xl leading-none">☰</span>
+        </button>
+
+        
+        <nav
+          id="menu-principal"
+          aria-label="Principal"
+          class="hidden md:block absolute right-4 top-full z-20 w-44 md:static md:w-auto"
+        >
+          <ul
+            class="flex flex-col md:flex-row md:items-center md:gap-6 overflow-hidden rounded-lg md:rounded-none text-sm font-semibold"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="sobre.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a
+                href="servicos.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Serviços</a
+              >
+            </li>
+            <li>
+              <a
+                href="orcamento.html"
+                aria-current="page"
+                class="block px-4 py-3 text-center bg-orange-600 text-white border-t border-sky-800 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-orange-600"
+                >Orçamento</a
+              >
+            </li>
+            <li>
+              <a
+                href="contactos.html"
+                class="block px-4 py-3 text-center bg-sky-950 text-white border-t border-sky-800 hover:bg-sky-900 md:bg-transparent md:text-sky-950 md:border-t-0 md:px-1 md:py-2 md:border-b-2 md:border-transparent md:hover:bg-transparent md:hover:border-orange-600"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <section aria-labelledby="t-hero" class="relative overflow-hidden bg-sky-950">
+        
+        <img
+          src="imagens/img_servicos.png"
+          alt=""
+          class="absolute inset-0 h-full w-full object-cover object-[center_70%]"
+        />
+
+        
+        <div
+          aria-hidden="true"
+          class="absolute inset-0 bg-gradient-to-r from-sky-950/95 via-sky-950/70 to-sky-950/10"
+        ></div>
+
+        
+        <div class="relative px-4 pb-24 pt-14 sm:px-8 sm:pt-20 lg:px-16 lg:pb-32 lg:pt-24">
+          <div class="max-w-2xl">
+            <h1
+              id="t-hero"
+              class="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+              Orçamentos
+              <span class="block text-orange-500">rápidos e à sua medida</span>
+            </h1>
+
+            <p class="mt-5 max-w-lg text-base leading-relaxed text-white sm:text-lg">
+              Faça o seu orçamento de forma simples ou descubra a melhor opção com o nosso
+              sistema de recomendação.
+            </p>
+          </div>
+        </div>
+
+        
+        <svg
+          viewBox="0 0 1440 90"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          class="absolute bottom-0 left-0 h-12 w-full sm:h-16"
+        >
+          <path
+            fill="#f97316"
+            d="M0,5 C220,35 370,90 700,65 C1000,45 1200,70 1440,35 L1440,90 L0,90 Z"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M0,30 C300,70 650,100 1000,65 C1200,45 1300,55 1440,35 L1440,90 L0,90 Z"
+          ></path>
+        </svg>
+      </section>
+
+      <section aria-labelledby="t-separadores" class="px-4 pt-6 pb-12 sm:px-8 sm:pt-10 lg:px-16">
+        
+        <h2 id="t-separadores" class="sr-only">Orçamento e recomendação</h2>
+
+        <ol class="mx-auto flex max-w-4xl flex-col gap-5 md:flex-row md:items-center md:gap-4">
+          <!-- Passo 1 -->
+          <li class="flex items-center gap-3">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sky-100">
+              <span aria-hidden="true" class="ant-design--home-outlined text-2xl"></span>
+            </span>
+            <span class="text-sm font-semibold text-sky-950">1. Escolha o serviço</span>
+          </li>
+
+          <!-- Passo 2 -->
+          <li class="flex items-center gap-3 md:flex-1">
+            <span aria-hidden="true" class="hidden h-px flex-1 bg-slate-300 md:block"></span>
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sky-100">
+              <span aria-hidden="true" class="clarity--map-marker-line text-2xl"></span>
+            </span>
+            <span class="text-sm font-semibold text-sky-950">2. Indique os detalhes</span>
+          </li>
+
+          <!-- Passo 3 -->
+          <li class="flex items-center gap-3 md:flex-1">
+            <span aria-hidden="true" class="hidden h-px flex-1 bg-slate-300 md:block"></span>
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sky-100">
+              <span aria-hidden="true" class="energy-icons--calculator-20-bold text-2xl"></span>
+            </span>
+            <span class="text-sm font-semibold text-sky-950">3. Receba o seu orçamento</span>
+          </li>
+        </ol>
+      
+              
+      <section aria-labelledby="t-separadores" class="px-4 pb-12 sm:px-8 lg:px-16">
+        
+        <h2 id="t-separadores" class="sr-only">Orçamento e recomendação</h2>
+
+        <div class="mx-auto mt-8 max-w-6xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg sm:mt-12">
+          
+          <div role="tablist" aria-label="Escolha o que pretende fazer" class="grid grid-cols-2 border-b border-slate-200">
+            
+            <button
+              type="button"
+              role="tab"
+              id="tab-orcamento"
+              aria-selected="true"
+              aria-controls="painel-orcamento"
+              class="flex items-center justify-center gap-3 border-b-4 border-orange-600 bg-white px-4 py-4 text-center text-sm font-bold text-sky-950 sm:text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-orange-600"
+            >
+              <span aria-hidden="true" class="energy-icons--calculator-20-bold shrink-0 text-2xl"></span>
+              <span>Fazer um orçamento<span class="hidden sm:inline"> personalizado</span></span>
+            </button>
+
+            
+            <button
+              type="button"
+              role="tab"
+              id="tab-recomendacao"
+              aria-selected="false"
+              aria-controls="painel-recomendacao"
+              tabindex="-1"
+              class="flex items-center justify-center gap-3 border-b-4 border-transparent bg-slate-100 px-4 py-4 text-center text-sm font-bold text-slate-600 hover:bg-slate-50 sm:text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-orange-600"
+            >
+              <span aria-hidden="true" class="akar-icons--star shrink-0 text-2xl"></span>
+              <span>Descobrir a recomendação<span class="hidden sm:inline"> ideal</span></span>
+            </button>
+          </div>
+
+          
+          <div
+            id="painel-orcamento"
+            role="tabpanel"
+            aria-labelledby="tab-orcamento"
+            tabindex="0"
+            class="p-6 sm:p-8 focus:outline-none"
+          >
+            
+            <form id="form-orcamento" action="#" novalidate class="flex flex-col gap-8">
+              <h3 class="text-xl font-extrabold text-sky-950 sm:text-2xl">
+                Conte-nos mais sobre a sua mudança
+              </h3>
+
+              <!-- origem e destino -->
+              <fieldset class="grid gap-5 sm:grid-cols-2">
+                <legend class="sr-only">Origem e destino</legend>
+
+                <!-- origem -->
+                <div class="flex flex-col gap-1">
+                  <label for="origem" class="text-sm font-semibold text-sky-950">
+                    Origem <span class="text-red-700" aria-hidden="true">*</span>
+                  </label>
+                  <div class="relative">
+                    <span aria-hidden="true" class="clarity--map-marker-line pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-xl"></span>
+                    <select
+                      id="origem"
+                      name="origem"
+                      required
+                      aria-describedby="erro-origem"
+                      class="w-full rounded-lg border border-slate-300 bg-white py-3 pl-10 pr-3 text-slate-800 focus:border-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600/30"
+                    >
+                      <option value="">Escolha o distrito</option>
+                      <option value="aveiro">Aveiro</option>
+                      <option value="beja">Beja</option>
+                      <option value="braga">Braga</option>
+                      <option value="braganca">Bragança</option>
+                      <option value="castelo-branco">Castelo Branco</option>
+                      <option value="coimbra">Coimbra</option>
+                      <option value="evora">Évora</option>
+                      <option value="faro">Faro</option>
+                      <option value="guarda">Guarda</option>
+                      <option value="leiria">Leiria</option>
+                      <option value="lisboa">Lisboa</option>
+                      <option value="portalegre">Portalegre</option>
+                      <option value="porto">Porto</option>
+                      <option value="santarem">Santarém</option>
+                      <option value="setubal">Setúbal</option>
+                      <option value="viana-do-castelo">Viana do Castelo</option>
+                      <option value="vila-real">Vila Real</option>
+                      <option value="viseu">Viseu</option>
+                    </select>
+                  </div>
+                  <p id="erro-origem" class="hidden text-sm text-red-700">Escolha o distrito de origem.</p>
+                </div>
+
+                <!-- destino -->
+                <div class="flex flex-col gap-1">
+                  <label for="destino" class="text-sm font-semibold text-sky-950">
+                    Destino <span class="text-red-700" aria-hidden="true">*</span>
+                  </label>
+                  <div class="relative">
+                    <span aria-hidden="true" class="clarity--map-marker-line pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-xl"></span>
+                    <select
+                      id="destino"
+                      name="destino"
+                      required
+                      aria-describedby="erro-destino"
+                      class="w-full rounded-lg border border-slate-300 bg-white py-3 pl-10 pr-3 text-slate-800 focus:border-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600/30"
+                    >
+                      <option value="">Escolha o distrito</option>
+                      <option value="aveiro">Aveiro</option>
+                      <option value="beja">Beja</option>
+                      <option value="braga">Braga</option>
+                      <option value="braganca">Bragança</option>
+                      <option value="castelo-branco">Castelo Branco</option>
+                      <option value="coimbra">Coimbra</option>
+                      <option value="evora">Évora</option>
+                      <option value="faro">Faro</option>
+                      <option value="guarda">Guarda</option>
+                      <option value="leiria">Leiria</option>
+                      <option value="lisboa">Lisboa</option>
+                      <option value="portalegre">Portalegre</option>
+                      <option value="porto">Porto</option>
+                      <option value="santarem">Santarém</option>
+                      <option value="setubal">Setúbal</option>
+                      <option value="viana-do-castelo">Viana do Castelo</option>
+                      <option value="vila-real">Vila Real</option>
+                      <option value="viseu">Viseu</option>
+                    </select>
+                  </div>
+                  <p id="erro-destino" class="hidden text-sm text-red-700">Escolha o distrito de destino.</p>
+                </div>
+              </fieldset>
+
+              <!-- tipo de serviço -->
+              <fieldset aria-describedby="erro-tipo">
+                <legend class="mb-3 text-sm font-semibold text-sky-950">
+                  Tipo de serviço <span class="text-red-700" aria-hidden="true">*</span>
+                </legend>
+
+                <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
+                  <label class="cursor-pointer">
+                    <input type="radio" name="tipo" value="residencial" required class="peer sr-only" />
+                    <span class="flex h-full flex-col items-center gap-2 rounded-xl border-2 border-slate-200 p-4 text-center text-sm font-semibold text-sky-950 transition hover:border-orange-300 peer-checked:border-orange-600 peer-checked:bg-orange-50 peer-focus-visible:ring-2 peer-focus-visible:ring-orange-600 peer-focus-visible:ring-offset-2">
+                      <span aria-hidden="true" class="ant-design--home-outlined text-3xl"></span>
+                      Mudança residencial
+                    </span>
+                  </label>
+
+                  <label class="cursor-pointer">
+                    <input type="radio" name="tipo" value="escritorio" class="peer sr-only" />
+                    <span class="flex h-full flex-col items-center gap-2 rounded-xl border-2 border-slate-200 p-4 text-center text-sm font-semibold text-sky-950 transition hover:border-orange-300 peer-checked:border-orange-600 peer-checked:bg-orange-50 peer-focus-visible:ring-2 peer-focus-visible:ring-orange-600 peer-focus-visible:ring-offset-2">
+                      <span aria-hidden="true" class="andrsrxn--chair-office text-3xl"></span>
+                      Mudança de escritório
+                    </span>
+                  </label>
+
+                  <label class="cursor-pointer">
+                    <input type="radio" name="tipo" value="estudantes" class="peer sr-only" />
+                    <span class="flex h-full flex-col items-center gap-2 rounded-xl border-2 border-slate-200 p-4 text-center text-sm font-semibold text-sky-950 transition hover:border-orange-300 peer-checked:border-orange-600 peer-checked:bg-orange-50 peer-focus-visible:ring-2 peer-focus-visible:ring-orange-600 peer-focus-visible:ring-offset-2">
+                      <span aria-hidden="true" class="cbi--rooms-bedroom text-3xl"></span>
+                      Quartos de estudantes
+                    </span>
+                  </label>
+
+                  <label class="cursor-pointer">
+                    <input type="radio" name="tipo" value="pequenas" class="peer sr-only" />
+                    <span class="flex h-full flex-col items-center gap-2 rounded-xl border-2 border-slate-200 p-4 text-center text-sm font-semibold text-sky-950 transition hover:border-orange-300 peer-checked:border-orange-600 peer-checked:bg-orange-50 peer-focus-visible:ring-2 peer-focus-visible:ring-orange-600 peer-focus-visible:ring-offset-2">
+                      <span aria-hidden="true" class="boxicons--package-filled text-3xl"></span>
+                      Pequenas mudanças
+                    </span>
+                  </label>
+                </div>
+                <p id="erro-tipo" class="mt-2 hidden text-sm text-red-700">Escolha o tipo de serviço.</p>
+              </fieldset>
+
+              <!-- veículo -->
+              <div class="flex flex-col gap-1">
+                <label for="veiculo" class="text-sm font-semibold text-sky-950">Selecione o veículo</label>
+                <select
+                  id="veiculo"
+                  name="veiculo"
+                  class="w-full rounded-lg border border-slate-300 bg-white p-3 text-slate-800 focus:border-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600/30"
+                >
+                  <option value="">Ainda não sei (recomendem-me um)</option>
+                  <option value="carrinha-pequena">Carrinha pequena</option>
+                  <option value="carrinha-media">Carrinha média</option>
+                  <option value="camiao">Camião</option>
+                </select>
+              </div>
+
+              <!--serviços adicionais -->
+              <fieldset>
+                <legend class="mb-3 text-sm font-semibold text-sky-950">
+                  Serviços adicionais <span class="font-normal text-slate-500">(opcional)</span>
+                </legend>
+                <div class="flex flex-col gap-3">
+                  <label class="flex items-center gap-3 text-slate-700">
+                    <input type="checkbox" name="extras" value="embalamento" class="h-5 w-5 accent-orange-600" />
+                    Embalamento
+                  </label>
+                  <label class="flex items-center gap-3 text-slate-700">
+                    <input type="checkbox" name="extras" value="montagem" class="h-5 w-5 accent-orange-600" />
+                    Desmontagem e montagem de móveis
+                  </label>
+                  <label class="flex items-center gap-3 text-slate-700">
+                    <input type="checkbox" name="extras" value="objetos-especiais" class="h-5 w-5 accent-orange-600" />
+                    Transporte de pianos e objetos especiais
+                  </label>
+                </div>
+              </fieldset>
+
+              
+              <button
+                type="submit"
+                class="mx-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-orange-600 px-8 py-3.5 font-semibold text-white shadow-md hover:bg-orange-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-600 focus-visible:ring-offset-2 sm:w-auto"
+              >
+                Calcular orçamento <span aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+
+          
+          <div
+            id="painel-recomendacao"
+            role="tabpanel"
+            aria-labelledby="tab-recomendacao"
+            tabindex="0"
+            hidden
+            class="p-6 sm:p-8 focus:outline-none"
+          >
+                        <!-- Formulário da recomendação (a lógica da recomendação vem numa fase seguinte) -->
+            <form id="form-recomendacao" action="#" novalidate class="flex flex-col gap-8">
+              
+              <div class="flex items-start gap-4 rounded-xl bg-sky-50 p-5">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white">
+                  <span aria-hidden="true" class="akar-icons--star text-2xl"></span>
+                </span>
+                <div>
+                  <h3 class="text-xl font-extrabold text-sky-950 sm:text-2xl">Não tem a certeza?</h3>
+                  <p class="mt-1 text-slate-700">
+                    Responda a algumas perguntas e deixe-nos recomendar a melhor opção para si.
+                  </p>
+                </div>
+              </div>
+
+              <!-- tamanho da mudança -->
+              <fieldset aria-describedby="erro-tamanho">
+                <legend class="mb-3 flex items-center gap-2 text-sm font-semibold text-sky-950">
+                  <span aria-hidden="true" class="flex h-6 w-6 items-center justify-center rounded-full bg-sky-100 text-xs">1</span>
+                  Qual é o tamanho da sua mudança?
+                  <span class="text-red-700" aria-hidden="true">*</span>
+                </legend>
+
+                <div class="grid gap-3 sm:grid-cols-3">
+                  <label class="cursor-pointer">
+                    <input type="radio" name="tamanho" value="pequena" required class="peer sr-only" />
+                    <span class="flex h-full flex-col items-center gap-1 rounded-xl border-2 border-slate-200 p-4 text-center transition hover:border-orange-300 peer-checked:border-orange-600 peer-checked:bg-orange-50 peer-focus-visible:ring-2 peer-focus-visible:ring-orange-600 peer-focus-visible:ring-offset-2">
+                      <span aria-hidden="true" class="boxicons--package-filled text-3xl"></span>
+                      <span class="text-sm font-semibold text-sky-950">Pequena</span>
+                      <span class="text-xs text-slate-500">Poucos artigos</span>
+                    </span>
+                  </label>
+
+                  <label class="cursor-pointer">
+                    <input type="radio" name="tamanho" value="media" class="peer sr-only" />
+                    <span class="flex h-full flex-col items-center gap-1 rounded-xl border-2 border-slate-200 p-4 text-center transition hover:border-orange-300 peer-checked:border-orange-600 peer-checked:bg-orange-50 peer-focus-visible:ring-2 peer-focus-visible:ring-orange-600 peer-focus-visible:ring-offset-2">
+                      <span aria-hidden="true" class="cbi--rooms-bedroom text-3xl"></span>
+                      <span class="text-sm font-semibold text-sky-950">Média</span>
+                      <span class="text-xs text-slate-500">Casa ou apartamento</span>
+                    </span>
+                  </label>
+
+                  <label class="cursor-pointer">
+                    <input type="radio" name="tamanho" value="grande" class="peer sr-only" />
+                    <span class="flex h-full flex-col items-center gap-1 rounded-xl border-2 border-slate-200 p-4 text-center transition hover:border-orange-300 peer-checked:border-orange-600 peer-checked:bg-orange-50 peer-focus-visible:ring-2 peer-focus-visible:ring-orange-600 peer-focus-visible:ring-offset-2">
+                      <span aria-hidden="true" class="ant-design--home-outlined text-3xl"></span>
+                      <span class="text-sm font-semibold text-sky-950">Grande</span>
+                      <span class="text-xs text-slate-500">Moradia completa</span>
+                    </span>
+                  </label>
+                </div>
+                <p id="erro-tamanho" class="mt-2 hidden text-sm text-red-700">Escolha o tamanho da mudança.</p>
+              </fieldset>
+
+              <!--quando -->
+              <div class="flex flex-col gap-2">
+                <label for="rec-quando" class="flex items-center gap-2 text-sm font-semibold text-sky-950">
+                  <span aria-hidden="true" class="flex h-6 w-6 items-center justify-center rounded-full bg-sky-100 text-xs">2</span>
+                  Quando pretende realizar a mudança?
+                </label>
+                <select
+                  id="rec-quando"
+                  name="quando"
+                  class="w-full rounded-lg border border-slate-300 bg-white p-3 text-slate-800 focus:border-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-600/30"
+                >
+                  <option value="">Selecione uma data aproximada</option>
+                  <option value="2-semanas">Nas próximas 2 semanas</option>
+                  <option value="1-mes">Dentro de 1 mês</option>
+                  <option value="1-3-meses">Dentro de 1 a 3 meses</option>
+                  <option value="nao-sei">Ainda não sei</option>
+                </select>
+              </div>
+
+              <!--Serviços extra -->
+              <fieldset>
+                <legend class="mb-3 flex items-center gap-2 text-sm font-semibold text-sky-950">
+                  <span aria-hidden="true" class="flex h-6 w-6 items-center justify-center rounded-full bg-sky-100 text-xs">3</span>
+                  Precisa de algum serviço extra?
+                </legend>
+                <div class="flex flex-col gap-3 pl-8">
+                  <label class="flex items-center gap-3 text-slate-700">
+                    <input type="checkbox" name="rec-extras" value="embalamento" class="h-5 w-5 accent-orange-600" />
+                    Embalamento
+                  </label>
+                  <label class="flex items-center gap-3 text-slate-700">
+                    <input type="checkbox" name="rec-extras" value="montagem" class="h-5 w-5 accent-orange-600" />
+                    Desmontagem e montagem de móveis
+                  </label>
+                  <label class="flex items-center gap-3 text-slate-700">
+                    <input type="checkbox" name="rec-extras" value="objetos-especiais" class="h-5 w-5 accent-orange-600" />
+                    Transporte de pianos e objetos especiais
+                  </label>
+                </div>
+              </fieldset>
+
+            
+              <button
+                type="submit"
+                class="mx-auto inline-flex w-full items-center justify-center gap-2 rounded-full bg-sky-950 px-8 py-3.5 font-semibold text-white shadow-md hover:bg-sky-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-950 focus-visible:ring-offset-2 sm:w-auto"
+              >
+                Obter recomendação <span aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    
+    </main>
+
+
+    <footer class="bg-slate-900 text-slate-300">
+      <div
+        class="px-4 sm:px-8 lg:px-16 py-10 flex flex-col items-center gap-8 md:grid md:grid-cols-[auto_1fr_auto] md:items-center"
+      >
+        
+        <a href="index.html" class="md:justify-self-start">
+          <img
+            src="imagens/logo_branco1.png"
+            alt="DAQUI PRAÍ Mudanças"
+            class="h-14 w-auto"
+          />
+        </a>
+
+        
+        <nav aria-label="Rodapé" class="md:justify-self-center">
+          <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white">Início</a></li>
+            <li><a href="sobre.html" class="hover:text-white">Sobre nós</a></li>
+            <li><a href="servicos.html" class="hover:text-white">Serviços</a></li>
+            <li>
+              <a href="orcamento.html" aria-current="page" class="font-medium text-orange-500">Orçamento</a>
+            </li>
+            <li><a href="contactos.html" class="hover:text-white">Contactos</a></li>
+          </ul>
+        </nav>
+
+        
+        <div class="flex items-center gap-4 md:justify-self-end">
+          <a
+            href="#"
+            aria-label="Facebook da DAQUI PRAÍ"
+            class="flex rounded hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+          >
+            <span aria-hidden="true" class="bi--facebook text-3xl"></span>
+          </a>
+          <a
+            href="#"
+            aria-label="Instagram da DAQUI PRAÍ"
+            class="flex rounded hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+          >
+            <span aria-hidden="true" class="basil--instagram-outline text-3xl"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-700">
+        <p class="px-4 sm:px-8 lg:px-16 py-4 text-center text-xs text-slate-400">
+          © 2026 DAQUI PRAÍ. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
